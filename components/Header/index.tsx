@@ -12,7 +12,7 @@ import {
 } from './styles';
 import raft_logo from '@/public/logo.svg';
 import ic_bars from '@/public/ic_bars.svg';
-import GetStartedButton from '@/components/AppButton/AppButton';
+import AppButton from '@/components/Common/AppButton/AppButton';
 import AnimatedLink from '@/components/AnimatedLink/AnimatedLink';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -42,7 +42,7 @@ const Header = () => {
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
           <AnimatedLink title="Go to App" />
-          <GetStartedButton padding="0.5rem 0.75rem" />
+          <AppButton padding="0.5rem 0.75rem" />
         </CallToActions>
       </Inner>
     </Wrapper>

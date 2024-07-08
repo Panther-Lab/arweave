@@ -1,10 +1,13 @@
-import Header from "@/components/Header/Header";
+import Header from "@/components/Header/index";
+import Featured from "@/components/Featured/Featured";
+import HeroSection from "@/components/HeroSection";
 
 
 export default function Home(){
     return(
         <main>
-            <Header/>
+            <HeroSection />
+            <Featured />
         </main>
     )
 }

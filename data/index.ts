@@ -13,6 +13,20 @@ export const links = [
     },
   ];
 
+  // For desktop
+export const phrases = ['Building the future', 'Game.'];
+export const paragraphPhrases = [
+  "Lorem lorem lorem lorem lorem lorem lorem",
+  'nisarg thakkar pawan ak.',
+];
+
+// For mobile
+export const mobilePhrases = ['Building the future', 'Game'];
+export const mobileParagraphPhrases = [
+  "Experience the future of gaming with Griffin. We're",
+  'here to empower your gaming journey.',
+];
+
   
   export const menu = {
     open: {
