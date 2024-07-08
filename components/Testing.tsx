@@ -35,6 +35,7 @@ export function Testing() {
           top: 0,
           left: 0,
           zIndex: 1,
+          position:"relative",
           right:10
         }}
       />
@@ -43,6 +44,8 @@ export function Testing() {
         style={{
           top: "10px",
           right: "10px",
+          position: "absolute",
+          zIndex: 2,
         }}
       >
         Play in Full Screen
