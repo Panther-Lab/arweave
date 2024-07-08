@@ -8,3 +8,10 @@ USERS = [[
     Name TEXT
   );
 ]]
+
+function InitDb()
+    db:exec(USERS)
+    return dbAdmin:tables()
+  end
+  
+  return InitDb()
