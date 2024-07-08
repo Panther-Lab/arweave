@@ -12,6 +12,8 @@
     "@arweave-wallet-kit/arconnect-strategy": "^0.0.1-beta.4",
     "@arweave-wallet-kit/react": "^0.0.1-beta.3",
     "@motionone/utils": "^10.18.0",
+    "@permaweb/ao-connect": "^0.0.27",
+    "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "@studio-freight/react-lenis": "^0.0.47",
     "arweave-wallet-kit": "^1.0.4",

@@ -20,6 +20,7 @@ import { links, menu } from '@/data/index';
 import { Button } from '../ui/button';
 import { ConnectButton } from "@arweave-wallet-kit/react";
 import ConnectionButton from '../ConnectButton/ConnectionButton';
+import RegisterUser from '../RegisterUser';
 
 
 const CryptoHeader = () => {
@@ -45,6 +46,7 @@ const CryptoHeader = () => {
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
           <ConnectionButton/>
+          <RegisterUser />
         </CallToActions>
       </Inner>
     </Wrapper>

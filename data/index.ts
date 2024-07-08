@@ -2,6 +2,18 @@ import seamless_payments from '@/public/seamless_payments.png';
 import smart_investing from '@/public/smart_investing.png';
 import wealth_management from '@/public/wealth_management.png';
 import financial_planning from '@/public/financial_planning.png';
+import { Testing } from '@/components/Testing';
+import { ComponentType } from 'react';
+
+
+export interface Project {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  iconLists: string[];
+  component: ComponentType;
+}
 
 export const links = [
     {
@@ -144,14 +156,14 @@ export const offers = [
 ];
 
 
-export const projects = [
+export const projects: Project[] = [
   {
     id: 1,
-    title: "Game 1: Lorem Ipsum",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Game 1: Pepe Maze",
+    des: "A Survival Game challenges players to stay alive in a hostile environment for as long as possible.",
     img: "/game.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    component: Testing,
   },
   {
     id: 2,
@@ -159,7 +171,7 @@ export const projects = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "/game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    component: Testing,
   },
   {
     id: 3,
@@ -167,7 +179,7 @@ export const projects = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "/game.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    component: Testing,
   },
   {
     id: 4,
@@ -175,8 +187,6 @@ export const projects = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "/game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    component: Testing,
   },
 ];
-  
-  
