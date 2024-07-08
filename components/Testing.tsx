@@ -16,13 +16,6 @@ export function Testing() {
   function handleClickEnterFullscreen() {
     requestFullscreen(true);
   }
-
-  function focusCanvas() {
-    if (canvasRef.current) {
-      canvasRef.current.focus();
-    }
-  }
-
   return (
     <Fragment>
       <Unity
