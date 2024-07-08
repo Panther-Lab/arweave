@@ -1,3 +1,8 @@
+import seamless_payments from '@/public/seamless_payments.png';
+import smart_investing from '@/public/smart_investing.png';
+import wealth_management from '@/public/wealth_management.png';
+import financial_planning from '@/public/financial_planning.png';
+
 export const links = [
     {
       url: '/',
@@ -92,5 +97,51 @@ export const mobileParagraphPhrases = [
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
   ];
+
+
+// For desktop
+export const desktopHeaderPhrases = [
+  'Elevate Your Financial',
+  'Journey with Griffin',
+];
+export const desktopParagraphPhrase = [
+  'Griffin offers a world of financial possibilities. From playing game to payments,',
+  "we've got you covered. Join us and unlock your potential today.",
+];
+
+// For mobile
+export const mobileParagraphPhrase = [
+  'Griffin offers a world of financial possibilities. From',
+  "gaming to payments, we've got you covered.",
+  'Join us and unlock your potential today.',
+];
+
+export const offers = [
+  {
+    illustration: seamless_payments,
+    title: 'Seamless Payments',
+    details:
+      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+  },
+  {
+    illustration: smart_investing,
+    title: 'Smart Gaming',
+    details:
+      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+  },
+  {
+    illustration: wealth_management,
+    title: 'Unity Game Integration',
+    details:
+      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+  },
+  {
+    illustration: financial_planning,
+    title: 'Multiple Games',
+    details:
+      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+  },
+];
+
   
   
