@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-// import "../../global.css";
+import "../../globals.css"
 import { ArweaveWalletKit } from "arweave-wallet-kit";
 import ArConnectStrategy from "@arweave-wallet-kit/arconnect-strategy";
 import Layout from "@/components/layout";
