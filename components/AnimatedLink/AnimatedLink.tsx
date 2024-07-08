@@ -1,7 +1,6 @@
 'use client';
-
 import { useState } from 'react';
-import { motion, Variants } from 'framer-motion';
+import { Div, Word, Span, AbsoluteContainer } from './styles';
 
 type AnimationProps = {
   rest: {
@@ -17,17 +16,7 @@ type AnimationProps = {
   };
 };
 
-type AnimatedLinkProps = {
-  title: string;
-};
-
-type AnimatedWordProps = {
-  title: string;
-  animations: AnimationProps;
-  isHovered: boolean;
-};
-
-const titleAnimation: Variants = {
+const titleAnimation = {
   rest: {
     transition: {
       staggerChildren: 0.005,
@@ -40,7 +29,7 @@ const titleAnimation: Variants = {
   },
 };
 
-const letterAnimation: AnimationProps = {
+const letterAnimation = {
   rest: {
     y: 0,
   },
@@ -54,7 +43,7 @@ const letterAnimation: AnimationProps = {
   },
 };
 
-const letterAnimationTwo: AnimationProps = {
+const letterAnimationTwo = {
   rest: {
     y: 25,
   },
@@ -68,12 +57,10 @@ const letterAnimationTwo: AnimationProps = {
   },
 };
 
-const AnimatedLink: React.FC<AnimatedLinkProps> = ({ title }) => {
+const AnimatedLink = ({ title }: { title: string }) => {
   const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <motion.div
-      className="relative cursor-pointer flex flex-col overflow-hidden"
+    <Div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -82,38 +69,41 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ title }) => {
         animations={letterAnimation}
         isHovered={isHovered}
       />
-      <div className="absolute top-0">
+      <AbsoluteContainer>
         <AnimatedWord
           title={title}
           animations={letterAnimationTwo}
           isHovered={isHovered}
         />
-      </div>
-    </motion.div>
+      </AbsoluteContainer>
+    </Div>
   );
 };
 
-const AnimatedWord: React.FC<AnimatedWordProps> = ({ title, animations, isHovered }) => (
-  <motion.span
-    className="whitespace-nowrap relative"
+export default AnimatedLink;
+
+const AnimatedWord = ({
+  title,
+  animations,
+  isHovered,
+}: {
+  title: string;
+  animations: AnimationProps;
+  isHovered: boolean;
+}) => (
+  <Word
     variants={titleAnimation}
     initial="rest"
     animate={isHovered ? 'hover' : 'rest'}
   >
     {title.split('').map((char, i) =>
       char === ' ' ? (
-        <motion.span key={i}>&nbsp;</motion.span>
+        <Span key={i}>&nbsp;</Span>
       ) : (
-        <motion.span
-          className="relative inline-block whitespace-nowrap text-link-color text-base font-normal md:text-background md:text-xl md:font-medium"
-          variants={animations}
-          key={i}
-        >
+        <Span variants={animations} key={i}>
           {char}
-        </motion.span>
+        </Span>
       )
     )}
-  </motion.span>
+  </Word>
 );
-
-export default AnimatedLink;

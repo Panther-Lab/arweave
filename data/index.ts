@@ -1,14 +1,14 @@
 export const links = [
     {
       url: '/',
-      linkTo: 'Solutions',
+      linkTo: 'Home',
     },
     {
-      url: '/',
-      linkTo: 'Learn',
+      url: '/dashboard',
+      linkTo: 'App',
     },
     {
-      url: '/',
+      url: '/about',
       linkTo: 'About',
     },
   ];
