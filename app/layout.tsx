@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ArweaveWalletKit } from "arweave-wallet-kit";
 import ArConnectStrategy from "@arweave-wallet-kit/arconnect-strategy";
+import Layout from "@/components/layout";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,8 +31,9 @@ export default function RootLayout({
             "DISPATCH",
           ],
           ensurePermissions: true,
-        }}>
-          {children}
+        }}><Layout>
+        {children}
+        </Layout>
         </ArweaveWalletKit>
       </body>
     </html>
