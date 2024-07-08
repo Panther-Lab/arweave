@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "../../global.css";
 import { ArweaveWalletKit } from "arweave-wallet-kit";
 import ArConnectStrategy from "@arweave-wallet-kit/arconnect-strategy";
 import Layout from "@/components/layout";
-
-
-
+import CryptoHeader from "@/components/Header/crypto";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -32,6 +30,7 @@ export default function RootLayout({
           ],
           ensurePermissions: true,
         }}>
+          <CryptoHeader/>
         {children}
         </ArweaveWalletKit>
       </body>
