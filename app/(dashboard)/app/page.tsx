@@ -1,10 +1,11 @@
-import RegisterUser from '@/components/RegisterUser/RegisterUser';
-
-export default function Home() {
-    return (
+import GameList from "@/components/GameList"
+import { Testing } from "@/components/Testing"
+export default function Home(){
+    return(
         <main>
-            <h1>Dashboard</h1>
-            <RegisterUser />
+            {/* <GameList /> */}
+            <Testing />
+            
         </main>
     )
 }
