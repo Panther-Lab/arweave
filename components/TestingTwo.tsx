@@ -3,12 +3,12 @@
 import React, { Fragment, useEffect, useRef } from "react";
 import { useUnityContext, Unity } from "react-unity-webgl";
 
-export function Testing() {
+export function TestingTwo() {
   const { unityProvider, loadingProgression, isLoaded ,requestFullscreen} = useUnityContext({
-    loaderUrl: "https://dimension-travellers-086fae.spheron.app/Build/New2.loader.js",
-    dataUrl: "https://dimension-travellers-086fae.spheron.app/Build/New2.data.unityweb",
-    frameworkUrl: "https://dimension-travellers-086fae.spheron.app/Build/New2.framework.js.unityweb",
-    codeUrl: "https://dimension-travellers-086fae.spheron.app/Build/New2.wasm.unityweb",
+    loaderUrl: "https://out-of-sight-23b09e.spheron.app/Build/Out%20of%20Sight.loader.js",
+    dataUrl: "https://out-of-sight-23b09e.spheron.app/Build/Out%20of%20Sight.data",
+    frameworkUrl: "https://out-of-sight-23b09e.spheron.app/Build/Out%20of%20Sight.framework.js",
+    codeUrl: "https://out-of-sight-23b09e.spheron.app/Build/Out%20of%20Sight.wasm",
   });
 
   const canvasRef = useRef(null);
@@ -17,16 +17,16 @@ export function Testing() {
     requestFullscreen(true);
   }
   return (
-    <div>
+    <div className="relative">
     <Fragment>
       <Unity
         unityProvider={unityProvider}
         ref={canvasRef}
         style={{
-          width: "70%",
-          height: "35%",
+          width: "80%",
+          height: "40%",
           top: 0,
-          left: "30%",
+          left: 0,
           zIndex: 1,
           position:"relative",
           right:10
@@ -35,9 +35,9 @@ export function Testing() {
       <button
         onClick={handleClickEnterFullscreen}
         style={{
-          top: 0,
-          left: "30%",
-          position:"relative"
+          top: "",
+          right: "10px",
+          zIndex: 2,
         }}
       >
         Play in Full Screen

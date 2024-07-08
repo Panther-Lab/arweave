@@ -2,8 +2,8 @@ import seamless_payments from '@/public/seamless_payments.png';
 import smart_investing from '@/public/smart_investing.png';
 import wealth_management from '@/public/wealth_management.png';
 import financial_planning from '@/public/financial_planning.png';
-import { Testing } from '@/components/Testing';
-import { ComponentType } from 'react';
+import { NavItem, SidebarNavItem } from "@/type";
+
 
 
 export interface Project {
@@ -12,7 +12,7 @@ export interface Project {
   des: string;
   img: string;
   iconLists: string[];
-  component: ComponentType;
+  link:string;
 }
 
 export const links = [
@@ -163,7 +163,7 @@ export const projects: Project[] = [
     des: "A Survival Game challenges players to stay alive in a hostile environment for as long as possible.",
     img: "/game.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    component: Testing,
+    link:"/pepe"
   },
   {
     id: 2,
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "/game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    component: Testing,
+    link:"/pepe"
   },
   {
     id: 3,
@@ -179,7 +179,7 @@ export const projects: Project[] = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "/game.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    component: Testing,
+    link:"/pepe"
   },
   {
     id: 4,
@@ -187,6 +187,45 @@ export const projects: Project[] = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "/game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    component: Testing,
+    link:"/pepe"
+  },
+];
+
+export const navItems: NavItem[] = [
+  {
+    title: "Games",
+    href: "/games",
+    icon: "dashboard",
+    label: "Dashboard",
+  },
+  {
+    title: "Earn",
+    href: "/earn",
+    icon: "send",
+    label: "send",
+  },
+  {
+    title: "Top Up",
+    href: "/dashboard/receive",
+    icon: "receipt",
+    label: "receipt",
+  },
+  {
+    title: "History",
+    href: "/dashboard/history",
+    icon: "history",
+    label: "history",
+  },
+  {
+    title: "Profile",
+    href: "/dashboard/profile",
+    icon: "profile",
+    label: "profile",
+  },
+  {
+    title: "Disconnect",
+    href: "/",
+    icon: "login",
+    label: "login",
   },
 ];

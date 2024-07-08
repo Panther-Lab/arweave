@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import { useActiveAddress } from "arweave-wallet-kit";
-import { createDataItemSigner, message, result } from "@permaweb/ao-connect";
+import { createDataItemSigner, message, result } from "@permaweb/aoconnect";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
