@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ArweaveWalletKit } from "arweave-wallet-kit";
+import ArConnectStrategy from "@arweave-wallet-kit/arconnect-strategy";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ArweaveWalletKit
+         config={{
+          permissions: [
+            "ACCESS_ADDRESS",
+            "ACCESS_PUBLIC_KEY",
+            "SIGN_TRANSACTION",
+            "DISPATCH",
+          ],
+          ensurePermissions: true,
+        }}>
+          {children}
+        </ArweaveWalletKit>
+      </body>
     </html>
   );
 }

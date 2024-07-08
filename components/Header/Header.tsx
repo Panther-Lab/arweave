@@ -3,13 +3,14 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import logo from "../public/logo.svg"
+import logo from "/public/logo.svg"
 //import raft_logo from '../../../../public/svgs/raft_logo.svg';
-import ic_bars from '../public/ic_bars.svg';
+import ic_bars from '/public/ic_bars.svg';
 // import { GetStartedButton } from '@/components';
 import AnimatedLink from '@/components/AnimatedLink';
 import {links, menu} from "../../data"
 import { Button } from '../ui/button';
+import ConnectionButton from '../ConnectButton/ConnectionButton';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +43,7 @@ const Header = () => {
           <AnimatedLink title="Login" />
           <Button className='p-2'>Get Started</Button>
         </div>
+        
       </div>
     </section>
   );
