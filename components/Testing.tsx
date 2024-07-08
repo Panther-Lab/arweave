@@ -17,11 +17,11 @@ export function Testing() {
     requestFullscreen(true);
   }
   return (
+    <div className="relative">
     <Fragment>
       <Unity
         unityProvider={unityProvider}
         ref={canvasRef}
-        devicePixelRatio={window.devicePixelRatio}
         style={{
           width: "80%",
           height: "40%",
@@ -35,15 +35,15 @@ export function Testing() {
       <button
         onClick={handleClickEnterFullscreen}
         style={{
-          top: "10px",
+          top: "",
           right: "10px",
-          position: "absolute",
           zIndex: 2,
         }}
       >
         Play in Full Screen
       </button>
     </Fragment>
+    </div>
   );
 }
 
