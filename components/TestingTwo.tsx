@@ -23,10 +23,10 @@ export function TestingTwo() {
         unityProvider={unityProvider}
         ref={canvasRef}
         style={{
-          width: "80%",
-          height: "40%",
+          width: "70%",
+          height: "35%",
           top: 0,
-          left: 0,
+          left: "30%",
           zIndex: 1,
           position:"relative",
           right:10
@@ -35,9 +35,9 @@ export function TestingTwo() {
       <button
         onClick={handleClickEnterFullscreen}
         style={{
-          top: "",
-          right: "10px",
-          zIndex: 2,
+          top: 0,
+          left: "30%",
+          position:"relative"
         }}
       >
         Play in Full Screen

@@ -167,11 +167,11 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Game 2: Lorem Ipsum",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Game 2: Out of Sight",
+    des: "Out of Sight is a relaxing hidden object game designed to help you unwind. Play each level at your own pace and discover every secret the beautifully vibrant worlds have to offer.",
     img: "/game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link:"/pepe"
+    link:"/sight"
   },
   {
     id: 3,
@@ -194,7 +194,7 @@ export const projects: Project[] = [
 export const navItems: NavItem[] = [
   {
     title: "Games",
-    href: "/games",
+    href: "/game",
     icon: "dashboard",
     label: "Dashboard",
   },
@@ -206,7 +206,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: "Top Up",
-    href: "/dashboard/receive",
+    href: "/topup",
     icon: "receipt",
     label: "receipt",
   },
@@ -218,7 +218,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: "Profile",
-    href: "/dashboard/profile",
+    href: "/profile",
     icon: "profile",
     label: "profile",
   },
