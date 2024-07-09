@@ -13,7 +13,7 @@ export default function Faucet() {
   const [recipientAddress, setRecipientAddress] = useState('');
   const [status, setStatus] = useState('');
   const activeAddress = useActiveAddress();
-  const processId = "RdiOs7wNV7g-rZfb2IpnnrzTAMpljSwZZRNQOx8-cR8";
+  const processId = "xd_jLzof8FxYE6M5eAwqX7YMtkdGc2tPEC1iG7qtR_c";
 
   const handleFaucetRequest = async () => {
     try {
@@ -21,8 +21,7 @@ export default function Faucet() {
       const res = await message({
         process: processId,
         tags: [
-          { name: "Action", value: "Faucet" },
-          { name: "Recipient", value: recipientAddress },
+          { name: "Action", value: "Mint" },
           { name: "Quantity", value: amount }
         ],
         data: "",

@@ -190,9 +190,8 @@ Handlers.add('mint', Handlers.utils.hasMatchingTag('Action', 'Mint'), function(m
   assert(type(msg.Quantity) == 'string', 'Quantity is required!')
   assert(bint(0) < bint(msg.Quantity), 'Quantity must be greater than zero!')
 
-  if not Balances[ao.id] then Balances[ao.id] = "0" end
+  if not Balances[msg.From] then Balances[ao.id] = "0" end
 
-  if msg.From == ao.id then
     -- Add tokens to the token pool, according to Quantity
     Balances[msg.From] = utils.add(Balances[msg.From], msg.Quantity)
     TotalSupply = utils.add(TotalSupply, msg.Quantity)
@@ -200,14 +199,6 @@ Handlers.add('mint', Handlers.utils.hasMatchingTag('Action', 'Mint'), function(m
       Target = msg.From,
       Data = Colors.gray .. "Successfully minted " .. Colors.blue .. msg.Quantity .. Colors.reset
     })
-  else
-    ao.send({
-      Target = msg.From,
-      Action = 'Mint-Error',
-      ['Message-Id'] = msg.Id,
-      Error = 'Only the Process Id can mint new ' .. Ticker .. ' tokens!'
-    })
-  end
 end)
 
 --[[
