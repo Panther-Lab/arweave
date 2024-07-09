@@ -14,3 +14,5 @@ export function formatNumber(input: number, decimals?: number) {
     compactDisplay: "short",
   });
 }
+
+export const convertFileToUrl = (file: File) => URL.createObjectURL(file);
