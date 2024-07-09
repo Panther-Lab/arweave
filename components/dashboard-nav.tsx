@@ -9,6 +9,7 @@ import { ConnectButton } from "arweave-wallet-kit";
 import { useOnborda } from "onborda";
 import { Sparkle, Sparkles } from "lucide-react";
 import Provider from "./Provider";
+import BalanceButton from "./BalanceButton";
 
 
 
@@ -67,9 +68,10 @@ setOpen?: Dispatch<SetStateAction<boolean>>;
       );
       })}
     </nav>
-    <div className="mt-48">
-      <div className="flex mt-48">
+    <div className="flex flex-col mt-32 gap-10">
+      <div className="flex mt-32 flex-col gap-5">
       <WalletButtons />
+      <BalanceButton/>
       </div>
     </div>  
   </>
