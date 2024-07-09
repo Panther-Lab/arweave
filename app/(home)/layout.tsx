@@ -4,6 +4,8 @@ import "../globals.css"
 import { ArweaveWalletKit } from "arweave-wallet-kit";
 import ArConnectStrategy from "@arweave-wallet-kit/arconnect-strategy";
 import Layout from "@/components/layout";
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 
@@ -24,6 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
       <Layout>
         {children}
+        <Analytics />
         </Layout>
       </body>
     </html>

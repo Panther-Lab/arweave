@@ -12,6 +12,7 @@ import { OnbordaProvider } from "./OnbordaContext";
 import Onborda from "./Onborda";
 import { steps } from "@/lib/steps";
 import CustomCard from "@/components/CustomCard";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Arweave Game",
@@ -45,6 +46,7 @@ export default function RootLayout({
               shadowOpacity="0.8">
         <main className="w-full pt-16 ">
           {children}
+          <Analytics />
         </main>
         </Onborda>
         </OnbordaProvider>

@@ -34,11 +34,15 @@ import {
     GanttChart,
     Send,
     Store,
+    Swords,
+    Gamepad2,
   } from "lucide-react";
   
   export type Icon = LucideIcon;
   
   export const Icons = {
+    publish:Gamepad2,
+    game: Swords,
     marketplace: Store,
     dashboard: LayoutDashboardIcon,
     logo: Command,

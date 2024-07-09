@@ -209,9 +209,9 @@ export const projects: Project[] = [
 
 export const navItems: NavItem[] = [
   {
-    title: "Games",
+    title: "Game Library",
     href: "/game",
-    icon: "dashboard",
+    icon: "game",
     label: "Dashboard",
   },
   {
@@ -245,9 +245,9 @@ export const navItems: NavItem[] = [
     label: "profile",
   },
   {
-    title: "Disconnect",
-    href: "/",
-    icon: "login",
-    label: "login",
+    title: "Publish",
+    href: "/publish",
+    icon: "publish",
+    label: "publish",
   },
 ];
