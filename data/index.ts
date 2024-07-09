@@ -189,6 +189,22 @@ export const projects: Project[] = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link:"/pepe"
   },
+  {
+    id: 5,
+    title: "Game 4: Lorem Ipsum",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "/game.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link:"/pepe"
+  },
+  {
+    id: 6,
+    title: "Game 4: Lorem Ipsum",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "/game.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link:"/pepe"
+  },
 ];
 
 export const navItems: NavItem[] = [
