@@ -7,13 +7,14 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import BalanceButton from './BalanceButton';
 
 export default function Faucet() {
   const [amount, setAmount] = useState('');
   const [recipientAddress, setRecipientAddress] = useState('');
   const [status, setStatus] = useState('');
   const activeAddress = useActiveAddress();
-  const processId = "xd_jLzof8FxYE6M5eAwqX7YMtkdGc2tPEC1iG7qtR_c";
+  const processId = "RdiOs7wNV7g-rZfb2IpnnrzTAMpljSwZZRNQOx8-cR8";
 
   const handleFaucetRequest = async () => {
     try {
@@ -44,7 +45,9 @@ export default function Faucet() {
   };
 
   return (
+    
     <Card className="w-full max-w-md">
+      <BalanceButton/>
       <CardHeader>
         <CardTitle>Token Faucet</CardTitle>
         <CardDescription>Request tokens from the faucet.</CardDescription>
@@ -61,16 +64,6 @@ export default function Faucet() {
             onChange={(e) => setAmount(e.target.value)}
           />
         </div>
-        <div className="grid gap-2">
-          <Label htmlFor="recipient">Recipient Address</Label>
-          <Input
-            id="recipient"
-            type="text"
-            placeholder="Enter recipient's wallet address"
-            value={recipientAddress}
-            onChange={(e) => setRecipientAddress(e.target.value)}
-          />
-        </div>
         {status && (
           <Alert>
             <AlertDescription>{status}</AlertDescription>
@@ -81,7 +74,6 @@ export default function Faucet() {
         <Button
           className="w-full"
           onClick={handleFaucetRequest}
-          disabled={!activeAddress || !amount || !recipientAddress}
         >
           Request Tokens
         </Button>
