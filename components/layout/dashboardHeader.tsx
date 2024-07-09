@@ -14,7 +14,7 @@ export default function Header() {
     <div className="fixed top-0 left-0 right-0 supports-backdrop-blur:bg-background/60 border-b bg-background/95 backdrop-blur z-20">
       <nav className="h-14 flex items-center justify-between px-4">
         <div className="hidden md:block">
-          <Link href="https://linktr.ee/fluxtreme" target="_blank">
+          <Link href="/">
               <Image src={lightLogo} alt="Fluxtream Logo" width={150} height={40} />
           </Link>
         </div>

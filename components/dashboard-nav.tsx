@@ -6,6 +6,9 @@ import Image from "next/image";
 import Profile from "@/public/GradientAvatar.svg"
 import dynamic from 'next/dynamic';
 import { ConnectButton } from "arweave-wallet-kit";
+import { useOnborda } from "onborda";
+import { Sparkle, Sparkles } from "lucide-react";
+import Provider from "./Provider";
 
 
 
@@ -13,6 +16,8 @@ import { Icons } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import { NavItem } from "@/type";
 import { Dispatch, SetStateAction } from "react";
+import { Button } from "./ui/button";
+import { OnbordaProvider } from "@/app/(dashboard)/OnbordaContext";
 
 interface DashboardNavProps {
 items: NavItem[];
@@ -20,7 +25,6 @@ setOpen?: Dispatch<SetStateAction<boolean>>;
   }
 
   export function DashboardNav({ items, setOpen }: DashboardNavProps) {
-  const [walletConnected, setWalletConnected] = useState(false);
   const path = usePathname();
 
   if (!items?.length) {
@@ -67,21 +71,7 @@ setOpen?: Dispatch<SetStateAction<boolean>>;
       <div className="flex mt-48">
       <WalletButtons />
       </div>
-    </div>
-    {walletConnected &&
-    <div>
-      <div className="flex items-center gap-3 flex-row text-black dark:text-white overflow-x-hidden min-h-10 mt-48">
-        <div className="relative flex hover:border-blue-500">
-          <Image className="block w-10 h-10 object-cover cursor-pointer rounded-full border-3 border-transparent transition-all duration-200 ease-in-out" src={Profile} alt="Profile Avatar" />
-          <div className=""></div>
-        </div>
-        <div className="flex flex-col gap-1 whitespace-nowrap hide">
-          <div className="font-semibold text-left text-black dark:text-white">Joe Doe</div>
-          <div className="text-black dark:text-white text-sm">joe.doe@atheros.ai</div>
-        </div>
-      </div>
-    </div>
-  }
+    </div>  
   </>
 
   );

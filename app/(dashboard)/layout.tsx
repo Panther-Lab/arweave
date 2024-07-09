@@ -8,6 +8,10 @@ import CryptoHeader from "@/components/Header/crypto";
 const inter = Inter({ subsets: ["latin"] });
 import Header from "@/components/layout/dashboardHeader";
 import Sidebar from "@/components/layout/sidebar";
+import { OnbordaProvider } from "./OnbordaContext";
+import Onborda from "./Onborda";
+import { steps } from "@/lib/steps";
+import CustomCard from "@/components/CustomCard";
 
 export const metadata: Metadata = {
   title: "Arweave Game",
@@ -34,8 +38,16 @@ export default function RootLayout({
         }}>
         <Header />
         <div className="flex h-screen overflow-hidden">
+        
+        <OnbordaProvider>
         <Sidebar />
-        <main className="w-full pt-16 ">{children}</main>
+        <Onborda steps={steps} cardComponent={CustomCard}
+              shadowOpacity="0.8">
+        <main className="w-full pt-16 ">
+          {children}
+        </main>
+        </Onborda>
+        </OnbordaProvider>
       </div>
         </ArweaveWalletKit>
       </body>

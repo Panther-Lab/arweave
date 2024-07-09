@@ -31,23 +31,23 @@ export const links = [
   ];
 
   // For desktop
-export const phrases = ['Building the future', 'Game.'];
+export const phrases = ['Play. Earn. Thrive.', 'Discover the Future of Gaming on Arweave.'];
 export const paragraphPhrases = [
-  "Lorem lorem lorem lorem lorem lorem lorem",
-  'nisarg thakkar pawan ak.',
+  "Experience a platform built on transparency and fairness,",
+  'ensuring equal opportunities for all.',
 ];
 
 // For mobile
-export const mobilePhrases = ['Building the future', 'Game'];
+export const mobilePhrases = ['Play. Earn. Thrive.', 'Discover the Future of Gaming on Arweave.'];
 export const mobileParagraphPhrases = [
-  "Experience the future of gaming with Griffin. We're",
-  'here to empower your gaming journey.',
+  "Experience a platform built on transparency and fairness,",
+  'ensuring equal opportunities for all.',
 ];
 
   
   export const menu = {
     open: {
-      width: '250px',
+      width: '290px',
       height: '300px',
       top: '-25px',
       right: '-25px',

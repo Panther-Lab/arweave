@@ -1,9 +1,13 @@
 import { DashboardNav } from "@/components/dashboard-nav";
 import { navItems } from "@/data";
 import { cn } from "@/lib/utils";
+import { OnbordaProvider } from "@/app/(dashboard)/OnbordaContext";
+
+
 
 export default function Sidebar() {
   return (
+    
     <nav
       className={cn(`relative hidden h-screen border-r pt-16 md:block w-72`)}
     >
@@ -13,7 +17,9 @@ export default function Sidebar() {
             <h2 className="mb-2 px-4 text-xl font-semibold tracking-tight">
               Overview
             </h2>
+            <OnbordaProvider>
             <DashboardNav items={navItems} />
+            </OnbordaProvider>
           </div>
         </div>
       </div>

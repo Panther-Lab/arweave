@@ -40,12 +40,12 @@ export const Pill = styled.div`
 export const HeroTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.8rem;
   padding-bottom: 2rem;
 
   h1 {
-    font-size: 4.2rem;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 300;
   }
 
   p {
