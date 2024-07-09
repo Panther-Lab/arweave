@@ -19,29 +19,22 @@ export function Testing() {
   return (
     <div>
     <Fragment>
-      <Unity
-        unityProvider={unityProvider}
-        ref={canvasRef}
-        style={{
-          width: "70%",
-          height: "35%",
-          top: 0,
-          left: "30%",
-          zIndex: 1,
-          position:"relative",
-          right:10
-        }}
-      />
+    <Unity
+  unityProvider={unityProvider}
+  ref={canvasRef}
+  className="relative w-[70%] h-[35%] top-[20%] left-[15%] z-10 right-[10px] mt-[50px] rounded-xl"
+/>
+
+      <div className="flex items-center justify-center gap-8">
       <button
-        onClick={handleClickEnterFullscreen}
-        style={{
-          top: 0,
-          left: "30%",
-          position:"relative"
-        }}
-      >
+  onClick={handleClickEnterFullscreen}
+  className="relative top-0 rounded-xl bg-black p-3 mt-10"
+>
         Play in Full Screen
       </button>
+
+      <button className="mt-10 mr-8 rounded-xl bg-black p-3">Start Game Session</button>
+      </div>
     </Fragment>
     </div>
   );
