@@ -48,7 +48,7 @@ export default function Component() {
       <Card className="w-full max-w-4xl">
         <CardHeader>
           <CardTitle>Played Games</CardTitle>
-          <CardDescription>View the games you've played and your performance.</CardDescription>
+          <CardDescription>View the games you have played and your performance.</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">

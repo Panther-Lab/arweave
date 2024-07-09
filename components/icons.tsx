@@ -33,11 +33,13 @@ import {
     X,
     GanttChart,
     Send,
+    Store,
   } from "lucide-react";
   
   export type Icon = LucideIcon;
   
   export const Icons = {
+    marketplace: Store,
     dashboard: LayoutDashboardIcon,
     logo: Command,
     history: History,

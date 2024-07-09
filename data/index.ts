@@ -215,6 +215,12 @@ export const navItems: NavItem[] = [
     label: "Dashboard",
   },
   {
+    title: "Marketplace",
+    href: "/marketplace",
+    icon: "marketplace",
+    label: "marketplace",
+  },
+  {
     title: "Earn",
     href: "/earn",
     icon: "send",
