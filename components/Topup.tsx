@@ -11,7 +11,6 @@ import BalanceButton from './BalanceButton';
 
 export default function Faucet() {
   const [amount, setAmount] = useState('');
-  const [recipientAddress, setRecipientAddress] = useState('');
   const [status, setStatus] = useState('');
   const activeAddress = useActiveAddress();
   const processId = "RdiOs7wNV7g-rZfb2IpnnrzTAMpljSwZZRNQOx8-cR8";
@@ -47,7 +46,6 @@ export default function Faucet() {
   return (
     
     <Card className="w-full max-w-md">
-      <BalanceButton/>
       <CardHeader>
         <CardTitle>Token Faucet</CardTitle>
         <CardDescription>Request tokens from the faucet.</CardDescription>
