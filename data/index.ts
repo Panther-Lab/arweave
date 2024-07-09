@@ -175,11 +175,11 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Game 3: Lorem Ipsum",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Game 3: Tennis",
+    des: "Tennins Gaming is committed to creating a fun and immersive environment for all players, making it the perfect destination for gaming enthusiasts of all levels.",
     img: "/game.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link:"/pepe"
+    link:"/race"
   },
   {
     id: 4,
@@ -228,7 +228,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: "History",
-    href: "/dashboard/history",
+    href: "/history",
     icon: "history",
     label: "history",
   },

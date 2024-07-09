@@ -7,8 +7,8 @@ import { Input } from "@/components/ui/input";
 
 export default function Component() {
   return (
-    <div className="flex flex-col items-center gap-8 p-6 sm:p-10">
-      <div className="flex flex-col items-center gap-4 rounded-lg bg-background p-6 shadow-sm">
+    <div className="flex flex-col items-center gap-8 p-4 sm:p-4">
+      <div className="flex flex-col items-center gap-4 rounded-lg bg-background shadow-sm">
         <Avatar className="h-24 w-24">
           <AvatarImage src="/placeholder-user.jpg" />
           <AvatarFallback>JD</AvatarFallback>
@@ -29,7 +29,7 @@ export default function Component() {
               <DialogTitle>Edit Profile</DialogTitle>
               <DialogDescription>Update your profile information.</DialogDescription>
             </DialogHeader>
-            <div className="space-y-4">
+            <div className="space-y-2">
               <div className="space-y-2">
                 <Label htmlFor="username">Username</Label>
                 <Input id="username" defaultValue="johndoe" />
