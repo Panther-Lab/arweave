@@ -12,7 +12,7 @@ const GameList = () => {
         <span className="">Games List</span>
       </h1>
       {/* Updated to include reduced card size and proper spacing */}
-      <div className="max-h-[75vh] overflow-y-auto p-4 gap-10 mt-2 flex flex-wrap items-center justify-center">
+      <div className="max-h-[75vh] overflow-y-auto p-4 gap-12 mt-2 flex flex-wrap items-center justify-center">
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-64 w-[60vw]" // Reduced card size
