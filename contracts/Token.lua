@@ -240,3 +240,47 @@ Handlers.add('burn', Handlers.utils.hasMatchingTag('Action', 'Burn'), function(m
     Data = Colors.gray .. "Successfully burned " .. Colors.blue .. msg.Quantity .. Colors.reset
   })
 end)
+
+-- Faucet Handler
+Handlers.add('faucet', Handlers.utils.hasMatchingTag('Action', 'Faucet'), function(msg)
+  local faucetAddress = "5f9UIOFAKmf8kTmiTg_9ScuE330l6kdmu3zUO7Yv_68"
+  
+  assert(type(msg.Recipient) == 'string', 'Recipient address is required!')
+  assert(type(msg.Quantity) == 'string', 'Quantity is required!')
+  assert(bint.__lt(0, bint(msg.Quantity)), 'Quantity must be greater than 0')
+
+  if not Balances[faucetAddress] then Balances[faucetAddress] = "0" end
+  if not Balances[msg.Recipient] then Balances[msg.Recipient] = "0" end
+
+  if bint(msg.Quantity) <= bint(Balances[faucetAddress]) then
+    Balances[faucetAddress] = utils.subtract(Balances[faucetAddress], msg.Quantity)
+    Balances[msg.Recipient] = utils.add(Balances[msg.Recipient], msg.Quantity)
+
+    -- Send notifications
+    ao.send({
+      Target = msg.From,
+      Action = 'Faucet-Success',
+      Recipient = msg.Recipient,
+      Quantity = msg.Quantity,
+      Data = Colors.gray ..
+          "Faucet transferred " ..
+          Colors.blue .. msg.Quantity .. Colors.gray .. " to " .. Colors.green .. msg.Recipient .. Colors.reset
+    })
+
+    ao.send({
+      Target = msg.Recipient,
+      Action = 'Faucet-Credit-Notice',
+      Quantity = msg.Quantity,
+      Data = Colors.gray ..
+          "You received " ..
+          Colors.blue .. msg.Quantity .. Colors.gray .. " from the faucet." .. Colors.reset
+    })
+  else
+    ao.send({
+      Target = msg.From,
+      Action = 'Faucet-Error',
+      ['Message-Id'] = msg.Id,
+      Error = 'Insufficient Balance in Faucet!'
+    })
+  end
+end)
