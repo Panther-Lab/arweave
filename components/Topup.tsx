@@ -34,8 +34,12 @@ export default function Faucet() {
       console.log("Faucet result:", faucetResult);
       setStatus('Success! Tokens transferred from faucet.');
     } catch (error) {
-      console.error("Faucet error:", error);
-      setStatus('Error: ' + error.message);
+      if (error instanceof Error) {
+        setStatus('Error: ' + error.message);
+        console.error("Faucet error:", error);
+      } else {
+        setStatus('An unknown error occurred');
+      }      
     }
   };
 
