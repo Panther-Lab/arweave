@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import BalanceButton from './BalanceButton';
 
 export default function Faucet() {
   const [amount, setAmount] = useState('');
@@ -40,7 +41,9 @@ export default function Faucet() {
   };
 
   return (
+    
     <Card className="w-full max-w-md">
+      <BalanceButton/>
       <CardHeader>
         <CardTitle>Token Faucet</CardTitle>
         <CardDescription>Request tokens from the faucet.</CardDescription>
