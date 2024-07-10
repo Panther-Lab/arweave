@@ -1,6 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils";
-import lightLogo from "@/public/logo.svg"
+import lightLogo from "@/public/logosmall.svg"
 
 import { MobileSidebar } from "./mobile-sidebar";
 import { UserNav } from "./user-nav";

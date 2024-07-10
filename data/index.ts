@@ -258,3 +258,45 @@ export const navItems: NavItem[] = [
     label: "publish",
   },
 ];
+
+import ic_document_duplicate from '@/public/ic_document_duplicate.svg';
+import ic_identification from '@/public/ic_identification.svg';
+import ic_lock_closed from '@/public/ic_lock_closed.svg';
+
+// For desktop
+export const desktopHedPhrase = ["Introducing RAFT's Next-", 'Gen Gaming'];
+export const desktopParaPhrase = [
+  " Discover RAFT's latest innovation – our new cards. Elevate your banking",
+  'experience with cutting-edge features, security, and unprecedented',
+  'convenience.',
+];
+
+// For mobile
+export const mobileHedPhrase = ["Introducing RAFT's", 'Next-Gen Cards'];
+export const mobileParaPhrase = [
+  " Discover RAFT's latest innovation – our new cards.",
+  ' Elevate your banking experience with cutting-edge',
+  'features, security, and unprecedented',
+  'convenience.',
+];
+
+export const edges = [
+  {
+    point: 'Contactless Technology',
+    details:
+      'Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.',
+    icon: ic_document_duplicate,
+  },
+  {
+    point: 'Personalization',
+    details:
+      'Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.',
+    icon: ic_identification,
+  },
+  {
+    point: 'Enhanced Security',
+    details:
+      'Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.',
+    icon: ic_lock_closed,
+  },
+];

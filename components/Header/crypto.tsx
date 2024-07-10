@@ -10,7 +10,7 @@ import {
   AbsoluteLinks,
   BurgerMenu,
 } from './styles';
-import raft_logo from '@/public/logo.svg';
+import raft_logo from '@/public/logosmall.svg';
 import ic_bars from '@/public/ic_bars.svg';
 import AppButton from '@/components/Common/AppButton/AppButton';
 import AnimatedLink from '@/components/AnimatedLink/AnimatedLink';
