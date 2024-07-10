@@ -7,7 +7,7 @@ const AppButton = ({ padding }: { padding: string }) => {
       style={{
         padding: padding,
       }}
-      href="/"
+      href="/game"
     >
       Get Started
     </LinkTo>
