@@ -27,12 +27,6 @@ export default function History() {
                 <div>Fortnite</div>
               </div>
             </div>
-            <div className="grid gap-1">
-              <div className="text-sm text-muted-foreground">Favorite Game</div>
-              <div className="flex items-center gap-2">
-                <div>Apex Legends</div>
-              </div>
-            </div>
           </CardContent>
         </Card>
       </div>
@@ -41,9 +35,6 @@ export default function History() {
           <CardHeader className="bg-secondary text-secondary-foreground p-6">
             <div className="flex items-center justify-between">
               <div className="text-lg font-semibold">Game History</div>
-              <Button variant="secondary" size="sm">
-                View All
-              </Button>
             </div>
           </CardHeader>
           <CardContent className="p-6">
@@ -51,8 +42,8 @@ export default function History() {
               <TableHeader>
                 <TableRow>
                   <TableHead>Token Name</TableHead>
-                  <TableHead>Game</TableHead>
-                  <TableHead>Assets</TableHead>
+                  <TableHead>Game Name</TableHead>
+                  <TableHead>No of Assets Used</TableHead>
                   <TableHead>Timestamp</TableHead>
                   <TableHead>Tx Hash</TableHead>
                 </TableRow>
@@ -61,21 +52,21 @@ export default function History() {
                 <TableRow>
                   <TableCell>HH</TableCell>
                   <TableCell>Fortnite</TableCell>
-                  <TableCell>Skin, Emote</TableCell>
+                  <TableCell>2</TableCell>
                   <TableCell>2023-04-15 12:34:56</TableCell>
                   <TableCell>0x123...456</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>NN</TableCell>
                   <TableCell>Apex Legends</TableCell>
-                  <TableCell>Weapon Charm</TableCell>
+                  <TableCell>4</TableCell>
                   <TableCell>2023-04-10 09:45:23</TableCell>
                   <TableCell>0x789...012</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>HH</TableCell>
                   <TableCell>Valorant</TableCell>
-                  <TableCell>Gun Buddy</TableCell>
+                  <TableCell>4</TableCell>
                   <TableCell>2023-03-28 16:20:00</TableCell>
                   <TableCell>0xabc...def</TableCell>
                 </TableRow>

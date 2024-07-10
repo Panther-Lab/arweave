@@ -3,12 +3,12 @@
 import React, { Fragment, useEffect, useRef } from "react";
 import { useUnityContext, Unity } from "react-unity-webgl";
 
-export function TestingThree() {
+export function TestingFour() {
   const { unityProvider, loadingProgression, isLoaded ,requestFullscreen} = useUnityContext({
-    loaderUrl: "https://gateway.pinata.cloud/ipfs/QmWnFkgUxCvYBtn5ixaMCHZj7kC3m1om9h93qrMzM1ZSSt/Build/UnityLoader.js",
-    dataUrl: "https://gateway.pinata.cloud/ipfs/QmWnFkgUxCvYBtn5ixaMCHZj7kC3m1om9h93qrMzM1ZSSt/Build/karting-microgame.data.unityweb",
-    frameworkUrl: "https://gateway.pinata.cloud/ipfs/QmWnFkgUxCvYBtn5ixaMCHZj7kC3m1om9h93qrMzM1ZSSt/Build/karting-microgame.wasm.framework.unityweb",
-    codeUrl: "https://gateway.pinata.cloud/ipfs/QmWnFkgUxCvYBtn5ixaMCHZj7kC3m1om9h93qrMzM1ZSSt/Build/karting-microgame.wasm.code.unityweb",
+    loaderUrl: "https://cinemare-9d4062.spheron.app/Build/WebGL.loader.js",
+    dataUrl: "https://cinemare-9d4062.spheron.app/Build/WebGL.data",
+    frameworkUrl: "https://cinemare-9d4062.spheron.app/Build/WebGL.framework.js",
+    codeUrl: "https://cinemare-9d4062.spheron.app/Build/WebGL.wasm",
   });
 
   const canvasRef = useRef(null);

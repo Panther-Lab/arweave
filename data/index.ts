@@ -13,6 +13,7 @@ export interface Project {
   img: string;
   iconLists: string[];
   link:string;
+  imageLink:string;
 }
 
 export const links = [
@@ -91,34 +92,34 @@ export const mobileParagraphPhrases = [
     {
       question: 'Why do I use Griffins?',
       answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        'Our platform offers a unique combination of session-based gaming, Play2Earn opportunities, and significant earning potential for Unity developers. Enjoy a secure, decentralized experience while playing, earning, and creating in a dynamic and rewarding ecosystem.',
     },
     {
       question: 'How does a Game Developer Earn from Griffin?',
       answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        'Unity developers can earn 80% of the total revenue generated from their session-based games. By leveraging our platform, developers can monetize their skills and creativity, reaching a vast audience of gamers eager for new and exciting content.',
     },
     {
-      question: 'What types of transactions can I perform with Griffin?',
+      question: 'What types of transactions can I perform with the platform from the prespective of Web2 user?',
       answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        'As a Web2 user, you can try out the games on our platform. To access premium features or start earning rewards, youll need to connect your wallet. This allows you to fully participate in our Play2Earn ecosystem and enjoy the benefits of blockchain-based gaming.',
     },
     {
       question: 'What benefits does Griffin offer over other platforms?',
       answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        'Our platform stands out by allowing users to earn tokens, sell NFT assets in the marketplace, and distribute rewards to token holders. This creates a comprehensive and engaging gaming experience where players and developers alike can benefit from the innovative opportunities offered by Web3 technology.',
     },
   ];
 
 
 // For desktop
 export const desktopHeaderPhrases = [
-  'Elevate Your Financial',
-  'Journey with Griffin',
+  'Transform Your Playtime',
+  'into Profits.',
 ];
 export const desktopParagraphPhrase = [
-  'Griffin offers a world of financial possibilities. From playing game to payments,',
-  "we've got you covered. Join us and unlock your potential today.",
+  'Experience the future of gaming with our session-based Web3 platform. Play games to earn real rewards in our Play2Earn ecosystem,',
+  "and if you're a Unity developer, create games and keep 80% of the revenue. Join us to play, earn, and develop in a secure, decentralized environment!",
 ];
 
 // For mobile
@@ -131,21 +132,21 @@ export const mobileParagraphPhrase = [
 export const offers = [
   {
     illustration: seamless_payments,
-    title: 'Seamless Payments',
+    title: 'Earn as You Play',
     details:
-      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+      'Accumulate rewards through in-game achievements and progress.',
   },
   {
     illustration: smart_investing,
-    title: 'Smart Gaming',
+    title: 'Develop and Earn',
     details:
-      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+      'Unity developers can design and launch games on our platform, keeping a significant portion (80%) of the revenue.',
   },
   {
     illustration: wealth_management,
-    title: 'Unity Game Integration',
+    title: 'Enjoy a Decentralized Experience',
     details:
-      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+      'Effortless token distribution, NFT asset marketplace, community rewards, and diverse gameplay.',
   },
   {
     illustration: financial_planning,
@@ -161,41 +162,46 @@ export const projects: Project[] = [
     id: 1,
     title: "Game 1: Pepe Maze",
     des: "A Survival Game challenges players to stay alive in a hostile environment for as long as possible.",
-    img: "/game.png",
+    img: "/pepe-maze.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link:"/pepe"
+    link:"/pepe",
+    imageLink:"/pepe-maze.png"
   },
   {
     id: 2,
     title: "Game 2: Out of Sight",
     des: "Out of Sight is a relaxing hidden object game designed to help you unwind. Play each level at your own pace and discover every secret the beautifully vibrant worlds have to offer.",
-    img: "/game.png",
+    img: "/sight.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link:"/sight"
+    link:"/sight",
+    imageLink:"/sight.png"
   },
   {
     id: 3,
     title: "Game 3: Tennis",
     des: "Tennins Gaming is committed to creating a fun and immersive environment for all players, making it the perfect destination for gaming enthusiasts of all levels.",
-    img: "/game.png",
+    img: "/tennis2.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link:"/race"
+    link:"/race",
+    imageLink:"/tennis.png"
   },
   {
     id: 4,
-    title: "Game 4: Lorem Ipsum",
+    title: "Game 4: Soul Saver",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "/game.png",
+    img: "/soul-saver.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link:"/pepe"
+    link:"/soul",
+    imageLink:"/soul-saver.png"
   },
   {
     id: 5,
-    title: "Game 4: Lorem Ipsum",
+    title: "Game 5: Cinemare",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "/game.png",
+    img: "/cinemare.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link:"/pepe"
+    link:"/cinemare",
+    imageLink:"/cinemare.png"
   },
   {
     id: 6,
@@ -203,7 +209,8 @@ export const projects: Project[] = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: "/game.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link:"/pepe"
+    link:"/pepe",
+    imageLink:"/bg.png"
   },
 ];
 

@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { z } from "zod";
 
 export interface NavItem {
   title: string;
@@ -78,3 +79,19 @@ export interface CardComponentProps {
   prevStep: () => void;
   arrow: JSX.Element;
 }
+
+export enum GameType {
+  Free = "Free",
+  Premium = "Borrow",
+  Commercial = "Commercial",
+}
+
+
+export const createGameSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+  website: z.string().url().optional(),
+  borrowerAddress: z.string(),
+  gameType: z.nativeEnum(GameType),
+  buildDocument: z.custom<File[]>().optional(),
+});
