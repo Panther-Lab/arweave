@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Edge, Edges, Title } from './styles';
-import lola_card from '../../public/pepe-maze.png';
-import orange_card from '../../public/out-of-sight.png';
-import terry_card from '../../public/soul-saver.png';
+import { Edge, Edges, Title } from '../layout/styles';
+import lola_card from '../../public/card1.png';
+import orange_card from '../../public/tennis3.png';
+import terry_card from '../../public/tennis.png';
 import {
   Wrapper,
   Inner,
@@ -49,7 +49,7 @@ const IntroSection = () => {
           </HeaderMainText>
         </Header>
         <CardsContainer>
-          <LeftImage
+        <LeftImage
             className={isHovered ? 'active' : ''}
             src={orange_card}
             alt="orange_atm_card"

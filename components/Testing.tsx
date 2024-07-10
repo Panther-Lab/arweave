@@ -115,44 +115,56 @@ export function Testing() {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Dimension Travellers</h1>
+      <h1 className="text-3xl font-bold mb-4">Out of Sight</h1>
       
-      {!gameSessionActive ? (
-        <div className="text-center">
-          <button 
-            onClick={startGameSession}
-            disabled={isLoading || !activeAddress}
-            className="px-4 py-2 bg-blue-500 text-white rounded"
-          >
-            {isLoading ? "Processing..." : "Start Game Session"}
-          </button>
-          <p className="mt-2">Connect your wallet and start a game session to play!</p>
-        </div>
-      ) : (
-        <div>
-          <Unity
-            unityProvider={unityProvider}
-            ref={canvasRef}
-            className="w-full h-96 rounded"
-          />
-          <div className="flex justify-between items-center mt-4">
-            <div>Time remaining: {sessionTimer} seconds</div>
-            <button
-              onClick={addThirtySeconds}
-              disabled={isLoading}
-              className="px-4 py-2 bg-green-500 text-white rounded mr-2"
-            >
-              Add 30 Seconds
-            </button>
-            <button
-              onClick={() => requestFullscreen(true)}
-              className="px-4 py-2 bg-gray-500 text-white rounded"
-            >
-              Fullscreen
-            </button>
+      <div className="mb-6">
+        {!gameSessionActive ? (
+          <>
+            <img src="/pepe-img.png" alt="Out of Sight" className="w-full h-64 object-cover rounded-lg mb-4" />
+            <p className="text-lg mb-4">
+              Navigate through a mysterious world where your vision is limited. Use your other senses to uncover secrets and survive.
+            </p>
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="font-bold">Game Type:</span>
+              <span>Adventure</span>
+            </div>
+            <div className="text-center">
+              <button 
+                onClick={startGameSession}
+                disabled={isLoading || !activeAddress}
+                className="px-6 py-3 bg-blue-500 text-white rounded-lg font-bold text-lg hover:bg-blue-600 transition-colors"
+              >
+                {isLoading ? "Processing..." : "Start Game Session"}
+              </button>
+              <p className="mt-2">Connect your wallet and start a game session to play!</p>
+            </div>
+          </>
+        ) : (
+          <div>
+            <Unity
+              unityProvider={unityProvider}
+              ref={canvasRef}
+              className="w-full h-96 rounded-lg"
+            />
+            <div className="flex justify-between items-center mt-4">
+              <div>Time remaining: {sessionTimer} seconds</div>
+              <button
+                onClick={addThirtySeconds}
+                disabled={isLoading}
+                className="px-4 py-2 bg-green-500 text-white rounded mr-2 hover:bg-green-600 transition-colors"
+              >
+                Add 30 Seconds
+              </button>
+              <button
+                onClick={() => requestFullscreen(true)}
+                className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors"
+              >
+                Fullscreen
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
       
       <div className="mt-4">
         <BalanceButton triggerUpdate={updateTrigger} />

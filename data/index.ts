@@ -25,10 +25,6 @@ export const links = [
       url: '/dashboard',
       linkTo: 'App',
     },
-    {
-      url: '/about',
-      linkTo: 'About',
-    },
   ];
 
   // For desktop
@@ -90,12 +86,12 @@ export const mobileParagraphPhrases = [
   
   export const faqData: FAQItem[] = [
     {
-      question: 'Why do I use Griffins?',
+      question: 'Why do I use Rebel Gamming?',
       answer:
         'Our platform offers a unique combination of session-based gaming, Play2Earn opportunities, and significant earning potential for Unity developers. Enjoy a secure, decentralized experience while playing, earning, and creating in a dynamic and rewarding ecosystem.',
     },
     {
-      question: 'How does a Game Developer Earn from Griffin?',
+      question: 'How does a Game Developer Earn from Rebel Gamming?',
       answer:
         'Unity developers can earn 80% of the total revenue generated from their session-based games. By leveraging our platform, developers can monetize their skills and creativity, reaching a vast audience of gamers eager for new and exciting content.',
     },
@@ -105,7 +101,7 @@ export const mobileParagraphPhrases = [
         'As a Web2 user, you can try out the games on our platform. To access premium features or start earning rewards, youll need to connect your wallet. This allows you to fully participate in our Play2Earn ecosystem and enjoy the benefits of blockchain-based gaming.',
     },
     {
-      question: 'What benefits does Griffin offer over other platforms?',
+      question: 'What benefits does Rebel Gamming offer over other platforms?',
       answer:
         'Our platform stands out by allowing users to earn tokens, sell NFT assets in the marketplace, and distribute rewards to token holders. This creates a comprehensive and engaging gaming experience where players and developers alike can benefit from the innovative opportunities offered by Web3 technology.',
     },
@@ -188,7 +184,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Game 4: Soul Saver",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    des: "Soul Saver is a fast-paced action game that challenges players to save the souls of the innocent from the clutches of evil.",
     img: "/soul-saver.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link:"/soul",
@@ -197,21 +193,21 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Game 5: Cinemare",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    des: "In Cinemare you have to give money token to people and not to the ghost. If you give money to the ghost, you will lose the game.",
     img: "/cinemare.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link:"/cinemare",
     imageLink:"/cinemare.png"
   },
-  {
-    id: 6,
-    title: "Game 4: Lorem Ipsum",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: "/game.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link:"/pepe",
-    imageLink:"/bg.png"
-  },
+  // {
+  //   id: 6,
+  //   title: "Game 4: Lorem Ipsum",
+  //   des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   img: "/game.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+  //   link:"/pepe",
+  //   imageLink:"/bg.png"
+  // },
 ];
 
 export const navItems: NavItem[] = [
@@ -221,12 +217,12 @@ export const navItems: NavItem[] = [
     icon: "game",
     label: "Dashboard",
   },
-  {
-    title: "Marketplace",
-    href: "/marketplace",
-    icon: "marketplace",
-    label: "marketplace",
-  },
+  // {
+  //   title: "Marketplace",
+  //   href: "/marketplace",
+  //   icon: "marketplace",
+  //   label: "marketplace",
+  // },
   {
     title: "Earn",
     href: "/earn",
@@ -264,7 +260,7 @@ import ic_identification from '@/public/ic_identification.svg';
 import ic_lock_closed from '@/public/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHedPhrase = ["Introducing RAFT's Next-", 'Gen Gaming'];
+export const desktopHedPhrase = ["Introducing Rebel Next-", 'Gen Gaming'];
 export const desktopParaPhrase = [
   " Discover RAFT's latest innovation – our new cards. Elevate your banking",
   'experience with cutting-edge features, security, and unprecedented',
@@ -282,21 +278,21 @@ export const mobileParaPhrase = [
 
 export const edges = [
   {
-    point: 'Contactless Technology',
+    point: 'Upload Game',
     details:
-      'Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.',
+      'The Unity Game Developer uploads the game to the platform one time and can earn from it forever.',
     icon: ic_document_duplicate,
   },
   {
-    point: 'Personalization',
+    point: 'Personal Portfolio',
     details:
-      'Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.',
+      'All the user have thier own personal portfolio to keep track of thier earnings and games played.',
     icon: ic_identification,
   },
   {
     point: 'Enhanced Security',
     details:
-      'Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.',
+      'Your peace of mind is our priority. Your games are stored in secure environments and are protected by the latest security measures.',
     icon: ic_lock_closed,
   },
 ];

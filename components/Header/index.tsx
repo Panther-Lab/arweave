@@ -41,7 +41,6 @@ const Header = () => {
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
-          <AnimatedLink title="Go to App" />
           <AppButton padding="0.5rem 0.75rem" />
         </CallToActions>
       </Inner>

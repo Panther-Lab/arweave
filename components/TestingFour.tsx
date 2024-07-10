@@ -120,7 +120,7 @@ export function TestingFour() {
       <div className="mb-6">
         {!gameSessionActive ? (
           <>
-            <img src="/cinemare.png" alt="Cinemare" className="w-full h-64 object-cover rounded-lg mb-4" />
+            <img src="/cinemare-img.png" alt="Cinemare" className="w-full h-64 object-cover rounded-lg mb-4" />
             <p className="text-lg mb-4">
               Immerse yourself in the world of cinema with Cinemare. Create, direct, and star in your own virtual movies.
             </p>

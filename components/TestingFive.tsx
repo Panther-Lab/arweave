@@ -120,7 +120,7 @@ export function TestingFive() {
       <div className="mb-6">
         {!gameSessionActive ? (
           <>
-            <img src="/soul-savior.png" alt="Soul Savior" className="w-full h-64 object-cover rounded-lg mb-4" />
+            <img src="/soul-game.png" alt="Soul Savior" className="w-full h-64 object-cover rounded-lg mb-4" />
             <p className="text-lg mb-4">
               Embark on a spiritual journey in Soul Savior. Guide lost souls to their rightful place in the afterlife.
             </p>

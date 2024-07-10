@@ -120,7 +120,7 @@ export function TestingTwo() {
       <div className="mb-6">
         {!gameSessionActive ? (
           <>
-            <img src="/out-of-sight.png" alt="Out of Sight" className="w-full h-64 object-cover rounded-lg mb-4" />
+            <img src="/out-of-sight-image.png" alt="Out of Sight" className="w-full h-64 object-cover rounded-lg mb-4" />
             <p className="text-lg mb-4">
               Navigate through a mysterious world where your vision is limited. Use your other senses to uncover secrets and survive.
             </p>

@@ -45,41 +45,6 @@ export default function Component() {
           </DialogContent>
         </Dialog>
       </div>
-      <Card className="w-full max-w-4xl">
-        <CardHeader>
-          <CardTitle>Played Games</CardTitle>
-          <CardDescription>View the games you have played and your performance.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            <div className="flex flex-col items-center gap-2 rounded-lg bg-muted p-4 text-center">
-              <img src="/placeholder.svg" width={64} height={64} alt="Game Thumbnail" className="rounded-md" />
-              <div className="text-sm font-medium">Elden Ring</div>
-              <div className="text-xs text-muted-foreground">Playtime: 120 hrs</div>
-            </div>
-            <div className="flex flex-col items-center gap-2 rounded-lg bg-muted p-4 text-center">
-              <img src="/placeholder.svg" width={64} height={64} alt="Game Thumbnail" className="rounded-md" />
-              <div className="text-sm font-medium">Apex Legends</div>
-              <div className="text-xs text-muted-foreground">Playtime: 80 hrs</div>
-            </div>
-            <div className="flex flex-col items-center gap-2 rounded-lg bg-muted p-4 text-center">
-              <img src="/placeholder.svg" width={64} height={64} alt="Game Thumbnail" className="rounded-md" />
-              <div className="text-sm font-medium">Valorant</div>
-              <div className="text-xs text-muted-foreground">Playtime: 60 hrs</div>
-            </div>
-            <div className="flex flex-col items-center gap-2 rounded-lg bg-muted p-4 text-center">
-              <img src="/placeholder.svg" width={64} height={64} alt="Game Thumbnail" className="rounded-md" />
-              <div className="text-sm font-medium">Fortnite</div>
-              <div className="text-xs text-muted-foreground">Playtime: 40 hrs</div>
-            </div>
-            <div className="flex flex-col items-center gap-2 rounded-lg bg-muted p-4 text-center">
-              <img src="/placeholder.svg" width={64} height={64} alt="Game Thumbnail" className="rounded-md" />
-              <div className="text-sm font-medium">Minecraft</div>
-              <div className="text-xs text-muted-foreground">Playtime: 30 hrs</div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 }
