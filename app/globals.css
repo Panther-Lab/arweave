@@ -65,3 +65,31 @@ a {
   @apply hidden;
 }
 
+.text-neon-blue {
+  color: #00f3ff;
+  text-shadow: 0 0 5px #00f3ff, 0 0 10px #00f3ff;
+}
+
+.bg-neon-green {
+  background-color: #39ff14;
+}
+
+.bg-neon-green-bright {
+  background-color: #66ff33;
+}
+
+.bg-neon-purple {
+  background-color: #bc13fe;
+}
+
+.bg-neon-purple-bright {
+  background-color: #d442fe;
+}
+
+.bg-neon-orange {
+  background-color: #ff6600;
+}
+
+.bg-neon-orange-bright {
+  background-color: #ff8533;
+}
