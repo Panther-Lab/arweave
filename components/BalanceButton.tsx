@@ -9,7 +9,7 @@ import { formatNumber } from '@/lib/utils';
 
 export default function BalanceButton({ triggerUpdate = 0 }) {
   const [isLoading, setIsLoading] = useState(false);
-  const [balance, setBalance] = useState<string | null>("0");
+  const [balance, setBalance] = useState<string>("0" ?? "");
   const activeAddress = useActiveAddress();
   const { toast } = useToast()
   const processId = "RdiOs7wNV7g-rZfb2IpnnrzTAMpljSwZZRNQOx8-cR8";
