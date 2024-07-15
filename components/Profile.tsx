@@ -14,9 +14,9 @@ export default function Component() {
           <AvatarFallback>JD</AvatarFallback>
         </Avatar>
         <div className="grid gap-1 text-center">
-          <div className="text-xl font-semibold">John Doe</div>
-          <div className="text-sm text-muted-foreground">@johndoe</div>
-          <div className="text-sm text-muted-foreground">0x123456789abcdef0123456789abcdef01234567</div>
+          <div className="text-xl font-semibold">Nisarg</div>
+          <div className="text-sm text-muted-foreground">@nisarg</div>
+          <div className="text-sm text-muted-foreground">ljBQsIH3k2xI3AWLWRpkiUThtz7lqCjFyBZoDhYqSdk</div>
         </div>
         <Dialog>
           <DialogTrigger asChild>

@@ -210,6 +210,27 @@ export const projects: Project[] = [
   // },
 ];
 
+export const projectsEarn: Project[] = [
+  {
+    id: 4,
+    title: "Game 1: Soul Saver",
+    des: "Soul Saver is a fast-paced action game that challenges players to save the souls of the innocent from the clutches of evil.",
+    img: "/soul-saver.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link:"/soul",
+    imageLink:"/soul-saver.png"
+  },
+  // {
+  //   id: 6,
+  //   title: "Game 4: Lorem Ipsum",
+  //   des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  //   img: "/game.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+  //   link:"/pepe",
+  //   imageLink:"/bg.png"
+  // },
+];
+
 export const navItems: NavItem[] = [
   {
     title: "Game Library",

@@ -10,13 +10,9 @@ export default function History() {
         <Card className="rounded-2xl overflow-hidden">
           <CardHeader className="bg-primary text-primary-foreground p-6">
             <div className="flex items-center gap-4">
-              <Avatar className="w-16 h-16">
-                <AvatarImage src="/placeholder-user.jpg" />
-                <AvatarFallback>JD</AvatarFallback>
-              </Avatar>
               <div>
-                <div className="text-lg font-semibold">John Doe</div>
-                <div className="text-sm text-primary-foreground/80">@johndoe</div>
+                <div className="text-lg font-semibold">Nisarg</div>
+                <div className="text-sm text-primary-foreground/80">@nisarg</div>
               </div>
             </div>
           </CardHeader>
@@ -24,7 +20,7 @@ export default function History() {
             <div className="grid gap-1">
               <div className="text-sm text-muted-foreground">Last Game Played</div>
               <div className="flex items-center gap-2">
-                <div>Fortnite</div>
+                <div>Meze Pepe</div>
               </div>
             </div>
           </CardContent>
@@ -51,21 +47,21 @@ export default function History() {
               <TableBody>
                 <TableRow>
                   <TableCell>HH</TableCell>
-                  <TableCell>Fortnite</TableCell>
+                  <TableCell>Meze Pepe</TableCell>
                   <TableCell>2</TableCell>
                   <TableCell>2023-04-15 12:34:56</TableCell>
                   <TableCell>0x123...456</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>NN</TableCell>
-                  <TableCell>Apex Legends</TableCell>
+                  <TableCell>Soul Eater</TableCell>
                   <TableCell>4</TableCell>
                   <TableCell>2023-04-10 09:45:23</TableCell>
                   <TableCell>0x789...012</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>HH</TableCell>
-                  <TableCell>Valorant</TableCell>
+                  <TableCell>Our of Sight</TableCell>
                   <TableCell>4</TableCell>
                   <TableCell>2023-03-28 16:20:00</TableCell>
                   <TableCell>0xabc...def</TableCell>

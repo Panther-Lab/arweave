@@ -15,8 +15,8 @@ import CustomCard from "@/components/CustomCard";
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
-  title: "Arweave Game",
-  description: "Build by Team Griffin",
+  title: "Rebel Gaming",
+  description: "Rebel Gaming is a gaming platform that allows users to play games and earn rewards.",
 };
 
 export default function RootLayout({

@@ -47,6 +47,10 @@ export function FormCreateGame() {
   console.log("Form Data", form.getValues())
   async function onSubmit(data: z.infer<typeof createGameSchema>) {
     console.log("Submitting form data:", data);
+    toast({
+      title: "Game Created",
+      description: "Game Created Successfully!",
+    })
     router.push(`/game`);
   }
 
