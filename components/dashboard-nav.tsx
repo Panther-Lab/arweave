@@ -59,7 +59,7 @@ setOpen?: Dispatch<SetStateAction<boolean>>;
       if (setOpen) setOpen(false);
       }}
       >
-      <span className={cn( "group flex items-center rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground" , path===item.href ? "bg-accent" : "transparent" , item.disabled && "cursor-not-allowed opacity-80" , )}>
+      <span className={cn( "group flex items-center rounded-xl px-3 py-3 text-sm font-medium hover:bg-accent hover:text-accent-foreground" , path===item.href ? "bg-accent" : "transparent" , item.disabled && "cursor-not-allowed opacity-80" , )}>
         <Icon className="mr-2 h-4 w-4" />
         <span>{item.title}</span>
       </span>
@@ -69,7 +69,7 @@ setOpen?: Dispatch<SetStateAction<boolean>>;
       })}
     </nav>
     <div className="flex flex-col mt-32 gap-10">
-      <div className="flex mt-32 flex-col gap-5">
+      <div className="flex mt-24 flex-col gap-5">
       <WalletButtons />
       <BalanceButton/>
       </div>

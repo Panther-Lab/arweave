@@ -7,16 +7,13 @@ import { OnbordaProvider } from "@/app/(dashboard)/OnbordaContext";
 
 export default function Sidebar() {
   return (
-    
     <nav
-      className={cn(`relative hidden h-screen border-r pt-16 md:block w-72`)}
+      className={cn(`relative hidden border-2 pt-8 md:block w-72 rounded-xl mt-20 shadow-lg h-4/5`)}
     >
-      <div className="space-y-4 py-4">
-        <div className="px-3 py-2">
+      <div className="">
+        <div className="px-3">
           <div className="space-y-1">
-            <h2 className="mb-2 px-4 text-xl font-semibold tracking-tight">
-              Overview
-            </h2>
+             
             <OnbordaProvider>
             <DashboardNav items={navItems} />
             </OnbordaProvider>
