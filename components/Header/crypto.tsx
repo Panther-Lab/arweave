@@ -29,7 +29,7 @@ const CryptoHeader = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={raft_logo} alt="raft_logo" priority />
+          <Image src={raft_logo} alt="raft_logo" priority className='w-12' />
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}

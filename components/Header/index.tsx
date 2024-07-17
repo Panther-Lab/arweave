@@ -25,7 +25,7 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={raft_logo} alt="raft_logo" priority />
+          <Image src={raft_logo} alt="raft_logo" priority className='w-32' />
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}
@@ -35,11 +35,6 @@ const Header = () => {
             <Image src={ic_bars} alt="bars" />
           </BurgerMenu>
         </LogoContainer>
-        <Nav className={isOpen ? 'active' : ''}>
-          {links.map((link, i) => (
-            <AnimatedLink key={i} title={link.linkTo} />
-          ))}
-        </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
           <AppButton padding="0.5rem 0.75rem" />
         </CallToActions>

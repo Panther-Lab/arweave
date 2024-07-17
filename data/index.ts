@@ -29,8 +29,9 @@ export const links = [
   ];
 
   // For desktop
-export const phrases = ['Play. Earn. Thrive.', 'Discover the Future of Gaming on Arweave.'];
+export const phrases = ['Play. Earn. Thrive with Pixel Gaming'];
 export const paragraphPhrases = [
+  'Discover the Future of Gaming on Arweave.',
   "Experience a platform built on transparency and fairness,",
   'ensuring equal opportunities for all.',
 ];
@@ -149,7 +150,7 @@ export const offers = [
     illustration: planning,
     title: 'Multiple Games',
     details:
-      'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
+      ' Explore and play over 5 exciting games, earn rewards.',
   },
 ];
 

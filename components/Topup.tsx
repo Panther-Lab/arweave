@@ -8,16 +8,19 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import BalanceButton from './BalanceButton';
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from "@/components/ui/dialog";
 
 export default function Faucet() {
   const [amount, setAmount] = useState('');
   const [status, setStatus] = useState('');
   const activeAddress = useActiveAddress();
   const processId = "RdiOs7wNV7g-rZfb2IpnnrzTAMpljSwZZRNQOx8-cR8";
+  const [open, setOpen] = useState(false); // State to control dialog open/close
 
   const handleFaucetRequest = async () => {
     try {
       setStatus('Processing...');
+      setOpen(true); // Open the dialog when processing starts
       const res = await message({
         process: processId,
         tags: [
@@ -39,13 +42,12 @@ export default function Faucet() {
         console.error("Faucet error:", error);
       } else {
         setStatus('An unknown error occurred');
-      }      
+      }
     }
   };
 
   return (
-    
-    <Card className="w-full max-w-md">
+    <Card className="w-full max-w-md rounded-xl">
       <CardHeader>
         <CardTitle>Token Faucet</CardTitle>
         <CardDescription>Request tokens from the faucet.</CardDescription>
@@ -59,22 +61,35 @@ export default function Faucet() {
             min="0"
             placeholder="Enter amount"
             value={amount}
+            className='rounded-xl'
             onChange={(e) => setAmount(e.target.value)}
           />
         </div>
-        {status && (
-          <Alert>
-            <AlertDescription>{status}</AlertDescription>
-          </Alert>
-        )}
       </CardContent>
       <CardFooter>
-        <Button
-          className="w-full"
-          onClick={handleFaucetRequest}
-        >
-          Request Tokens
-        </Button>
+        <Dialog open={open} onOpenChange={setOpen}>
+          <DialogTrigger asChild>
+            <Button
+              className="w-full rounded-xl"
+              onClick={handleFaucetRequest}
+            >
+              Request Tokens
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[425px] rounded-3xl">
+            <DialogHeader className='rounded-xl'>
+              <DialogTitle className='text-xl mb-2'>Faucet Status</DialogTitle>
+              <DialogDescription className='text-lg'>
+                {status}
+              </DialogDescription>
+            </DialogHeader>
+            <DialogFooter>
+              <DialogClose asChild>
+                <Button onClick={() => setOpen(false)}>Close</Button>
+              </DialogClose>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
       </CardFooter>
     </Card>
   )

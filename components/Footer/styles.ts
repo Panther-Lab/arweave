@@ -118,7 +118,7 @@ export const LinksContainer = styled.ul`
 
   li {
     color: #efefef;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     cursor: pointer;
     position: relative;
@@ -166,7 +166,7 @@ export const Translator = styled.div`
     gap: 0.5rem;
 
     h3 {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
   }
 `;

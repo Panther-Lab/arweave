@@ -20,7 +20,7 @@ export function Testing() {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [gameSessionActive, setGameSessionActive] = useState(false);
-  const [sessionTimer, setSessionTimer] = useState(60);
+  const [sessionTimer, setSessionTimer] = useState(6000);
   const [updateTrigger, setUpdateTrigger] = useState(0);
   const processId = "RdiOs7wNV7g-rZfb2IpnnrzTAMpljSwZZRNQOx8-cR8";
 
