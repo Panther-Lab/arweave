@@ -10,8 +10,8 @@ import Layout from "@/components/layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rebel Gaming",
-  description: "Rebel Gaming is a gaming platform that allows users to play games and earn rewards.",
+  title: "Pixel Gaming",
+  description: "Pixel Gaming is a gaming platform that allows users to play games and earn rewards.",
 };
 
 export default function RootLayout({

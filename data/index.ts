@@ -1,7 +1,8 @@
-import seamless_payments from '@/public/seamless_payments.png';
-import smart_investing from '@/public/smart_investing.png';
-import wealth_management from '@/public/wealth_management.png';
+import seamless_payments from '@/public/earn.png';
+import smart_investing from '@/public/develop.png';
+import wealth_management from '@/public/decentralize.png';
 import financial_planning from '@/public/financial_planning.png';
+import planning from '@/public/game_.png'
 import { NavItem, SidebarNavItem } from "@/type";
 
 
@@ -86,12 +87,12 @@ export const mobileParagraphPhrases = [
   
   export const faqData: FAQItem[] = [
     {
-      question: 'Why do I use Rebel Gamming?',
+      question: 'Why do I use Pixel Gamming?',
       answer:
         'Our platform offers a unique combination of session-based gaming, Play2Earn opportunities, and significant earning potential for Unity developers. Enjoy a secure, decentralized experience while playing, earning, and creating in a dynamic and rewarding ecosystem.',
     },
     {
-      question: 'How does a Game Developer Earn from Rebel Gamming?',
+      question: 'How does a Game Developer Earn from Pixel Gamming?',
       answer:
         'Unity developers can earn 80% of the total revenue generated from their session-based games. By leveraging our platform, developers can monetize their skills and creativity, reaching a vast audience of gamers eager for new and exciting content.',
     },
@@ -101,7 +102,7 @@ export const mobileParagraphPhrases = [
         'As a Web2 user, you can try out the games on our platform. To access premium features or start earning rewards, youll need to connect your wallet. This allows you to fully participate in our Play2Earn ecosystem and enjoy the benefits of blockchain-based gaming.',
     },
     {
-      question: 'What benefits does Rebel Gamming offer over other platforms?',
+      question: 'What benefits does Pixel Gamming offer over other platforms?',
       answer:
         'Our platform stands out by allowing users to earn tokens, sell NFT assets in the marketplace, and distribute rewards to token holders. This creates a comprehensive and engaging gaming experience where players and developers alike can benefit from the innovative opportunities offered by Web3 technology.',
     },
@@ -140,12 +141,12 @@ export const offers = [
   },
   {
     illustration: wealth_management,
-    title: 'Enjoy a Decentralized Experience',
+    title: 'Decentralized',
     details:
       'Effortless token distribution, NFT asset marketplace, community rewards, and diverse gameplay.',
   },
   {
-    illustration: financial_planning,
+    illustration: planning,
     title: 'Multiple Games',
     details:
       'Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem',
@@ -281,7 +282,7 @@ import ic_identification from '@/public/ic_identification.svg';
 import ic_lock_closed from '@/public/ic_lock_closed.svg';
 
 // For desktop
-export const desktopHedPhrase = ["Introducing Rebel Next-", 'Gen Gaming'];
+export const desktopHedPhrase = ["Introducing Pixel Next-", 'Gen Gaming'];
 export const desktopParaPhrase = [
   " Discover RAFT's latest innovation – our new cards. Elevate your banking",
   'experience with cutting-edge features, security, and unprecedented',

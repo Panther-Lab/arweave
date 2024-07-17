@@ -203,10 +203,7 @@ export const OfferCard = styled.div`
 
     ${ImageCtn} {
       margin-left: 2.5rem;
-      width: 100%;
+      width: 50%;
     }
   }
 `;
-
-
-
