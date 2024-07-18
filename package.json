@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dragbuild" : "next build && next export"
+    "dragbuild": "next build && next export"
   },
   "dependencies": {
     "@arweave-wallet-kit/arconnect-strategy": "^0.0.1-beta.4",
@@ -33,6 +33,7 @@
     "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.1.6",
     "framer-motion": "^11.2.13",
     "gsap": "^3.12.5",
     "highlight.js": "^11.10.0",

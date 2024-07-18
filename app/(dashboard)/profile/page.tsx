@@ -3,7 +3,7 @@ import Profile from "@/components/Profile"
 
 export default function Home() {
     return (
-        <main className="flex justify-center items-center min-h-screen">
+        <main className="flex justify-center items-center min-h-screen my-[-60px]">
             <Profile/>
         </main>
     )
