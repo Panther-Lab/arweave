@@ -8,7 +8,7 @@ import { useToast } from "@/components/ui/use-toast";
 import BalanceButton from "./BalanceButton";
 
 export function Testing() {
-  const { unityProvider, requestFullscreen } = useUnityContext({
+  const { unityProvider, requestFullscreen , unload, } = useUnityContext({
     loaderUrl: "https://dimension-travellers-086fae.spheron.app/Build/New2.loader.js",
     dataUrl: "https://dimension-travellers-086fae.spheron.app/Build/New2.data.unityweb",
     frameworkUrl: "https://dimension-travellers-086fae.spheron.app/Build/New2.framework.js.unityweb",
@@ -113,6 +113,14 @@ export function Testing() {
     }
   };
 
+  const endGameSession = async () => {
+    setGameSessionActive(false);
+    setSessionTimer(6000); // Reset timer to default value or as per your requirement
+    setIsLoading(false); // Assuming you might want to reset loading state as well
+    await unload();
+  };
+  
+
   return (
     <div className="max-w-4xl mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Out of Sight</h1>
@@ -160,6 +168,13 @@ export function Testing() {
                 className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors"
               >
                 Fullscreen
+              </button>
+              <button
+                onClick={endGameSession}
+                disabled={!gameSessionActive || isLoading}
+                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
+              >
+                End Game Session
               </button>
             </div>
           </div>
