@@ -67,7 +67,7 @@ export default function StakeMinesGame() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground p-4">
       <div className="w-full max-w-4xl">
-        {/* <div className="flex justify-between mb-4">
+        <div className="flex justify-between mb-4">
           <h1 className="text-3xl font-bold">Stake</h1>
           <div>
             <Button variant="outline" className="mr-2">
@@ -75,7 +75,7 @@ export default function StakeMinesGame() {
             </Button>
             <Button>Register</Button>
           </div>
-        </div> */}
+        </div>
         <div className="flex gap-8">
           <div className="w-1/3 space-y-4">
             <div className="flex rounded-full bg-[#1c3a47] p-1">
